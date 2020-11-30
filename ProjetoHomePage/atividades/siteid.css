@@ -1,0 +1,68 @@
+body{
+    background: url(https://imagens.ebc.com.br/93Xdc8_53zvubO_xEpWsElgveEE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2880px-pedro_americo_-_independencia_ou_morte_-_cores_ajustadas_0.jpg?itok=yadd99j9) 
+}
+header{
+    width:25%;
+    background:#fff;
+    position: absolute;
+    left:30;
+    top:5%;
+    z-index: 5;
+}
+header h1{
+    text-align: center;
+}
+nav ul{
+    list-style:none;
+    margin:5px 0;
+    padding:0;
+}
+nav a{
+    display:block;
+    border:1px solid #e5e5e5;
+    border-left:0;
+    border-right:0;
+    margin:3px 0;
+    color:#333;
+    padding:5px 0;
+    text-decoration: none;
+} 
+.box{
+    position:absolute;
+    top:5%;
+    right:10px;
+    width:70%;
+    height:90%;
+    background:#fff;
+}
+.box h2{
+    font-size:20px;
+    padding:10px;
+}
+.box p{
+    font-size:12px;
+    padding:10px;
+}
+.content{
+    min-width: 100%;
+    height: 98%;
+    position: absolute;
+    margin-left:-101%;
+    -webkit-transition: margin-left .8s ease-in-out;
+    -moz-transition: margin-left .8s ease-in-out;
+    -o-transition: margin-left .8s ease-in-out;
+    transition: margin-left .8s ease-in-out;
+}
+.content:target{
+    margin-left:0;
+}
+#parte1{
+    margin-left:0;
+}
+#parte1:target ~ header #link-parte1 a,
+#parte2:target ~ header #link-parte2 a,
+#parte3:target ~ header #link-parte3 a,
+#parte4:target ~ header #link-parte4 a{
+    background: #333;
+    color: #fff;
+}
